@@ -1,12 +1,12 @@
 module.exports = {
   dialect: 'postgres',
   host: 'localhost',
-  username: 'postgres',
+  username: 'gympoint',
   password: 'gympoint',
   database: 'gympoint',
   define: {
     timestamps: true,
-    undescored: true,
-    undescoredAll: true,
+    underscored: true,
+    underscoredAll: true,
   },
 };
