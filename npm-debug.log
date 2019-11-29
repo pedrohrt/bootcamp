@@ -1,0 +1,144 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'googleapis/nodejs-text-to-speech#debug' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData googleapis/nodejs-text-to-speech#debug
+8 silly fetchOtherPackageData googleapis/nodejs-text-to-speech#debug
+9 silly cache add args [ 'googleapis/nodejs-text-to-speech#debug', null ]
+10 verbose cache add spec googleapis/nodejs-text-to-speech#debug
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'googleapis/nodejs-text-to-speech#debug',
+11 silly cache add   scope: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'googleapis/nodejs-text-to-speech#debug',
+11 silly cache add   spec: 'github:googleapis/nodejs-text-to-speech#debug',
+11 silly cache add   type: 'hosted',
+11 silly cache add   hosted:
+11 silly cache add    { type: 'github',
+11 silly cache add      ssh: 'git@github.com:googleapis/nodejs-text-to-speech.git#debug',
+11 silly cache add      sshUrl: 'git+ssh://git@github.com/googleapis/nodejs-text-to-speech.git#debug',
+11 silly cache add      httpsUrl: 'git+https://github.com/googleapis/nodejs-text-to-speech.git#debug',
+11 silly cache add      gitUrl: 'git://github.com/googleapis/nodejs-text-to-speech.git#debug',
+11 silly cache add      shortcut: 'github:googleapis/nodejs-text-to-speech#debug',
+11 silly cache add      directUrl: 'https://raw.githubusercontent.com/googleapis/nodejs-text-to-speech/debug/package.json' } }
+12 verbose addRemoteGit caching googleapis/nodejs-text-to-speech#debug
+13 verbose addRemoteGit googleapis/nodejs-text-to-speech#debug is a repository hosted by github
+14 silly tryGitProto attempting to clone git://github.com/googleapis/nodejs-text-to-speech.git#debug
+15 silly tryClone cloning googleapis/nodejs-text-to-speech#debug via git://github.com/googleapis/nodejs-text-to-speech.git#debug
+16 verbose tryClone git-github-com-googleapis-nodejs-text-to-speech-git-debug-06793b80 not in flight; caching
+17 info git [ 'clone',
+17 info git   '--template=/home/pedro/.npm/_git-remotes/_templates',
+17 info git   '--mirror',
+17 info git   'git://github.com/googleapis/nodejs-text-to-speech.git',
+17 info git   '/home/pedro/.npm/_git-remotes/git-github-com-googleapis-nodejs-text-to-speech-git-debug-06793b80' ]
+18 verbose mirrorRemote googleapis/nodejs-text-to-speech#debug git clone git://github.com/googleapis/nodejs-text-to-speech.git
+19 verbose setPermissions googleapis/nodejs-text-to-speech#debug set permissions on /home/pedro/.npm/_git-remotes/git-github-com-googleapis-nodejs-text-to-speech-git-debug-06793b80
+20 verbose resolveHead googleapis/nodejs-text-to-speech#debug original treeish: debug
+21 info git [ 'rev-list', '-n1', 'debug' ]
+22 error git rev-list -n1 debug: fatal: ambiguous argument 'debug': unknown revision or path not in the working tree.
+22 error git rev-list -n1 debug: Use '--' to separate paths from revisions, like this:
+22 error git rev-list -n1 debug: 'git <command> [<revision>...] -- [<file>...]'
+23 silly tryHTTPS attempting to clone git+https://github.com/googleapis/nodejs-text-to-speech.git#debug
+24 silly tryClone cloning googleapis/nodejs-text-to-speech#debug via git+https://github.com/googleapis/nodejs-text-to-speech.git#debug
+25 verbose tryClone git-https-github-com-googleapis-nodejs-text-to-speech-git-debug-f286b8a6 not in flight; caching
+26 info git [ 'clone',
+26 info git   '--template=/home/pedro/.npm/_git-remotes/_templates',
+26 info git   '--mirror',
+26 info git   'https://github.com/googleapis/nodejs-text-to-speech.git',
+26 info git   '/home/pedro/.npm/_git-remotes/git-https-github-com-googleapis-nodejs-text-to-speech-git-debug-f286b8a6' ]
+27 verbose mirrorRemote googleapis/nodejs-text-to-speech#debug git clone https://github.com/googleapis/nodejs-text-to-speech.git
+28 verbose setPermissions googleapis/nodejs-text-to-speech#debug set permissions on /home/pedro/.npm/_git-remotes/git-https-github-com-googleapis-nodejs-text-to-speech-git-debug-f286b8a6
+29 verbose resolveHead googleapis/nodejs-text-to-speech#debug original treeish: debug
+30 info git [ 'rev-list', '-n1', 'debug' ]
+31 error git rev-list -n1 debug: fatal: ambiguous argument 'debug': unknown revision or path not in the working tree.
+31 error git rev-list -n1 debug: Use '--' to separate paths from revisions, like this:
+31 error git rev-list -n1 debug: 'git <command> [<revision>...] -- [<file>...]'
+32 silly trySSH attempting to clone git@github.com:googleapis/nodejs-text-to-speech.git#debug
+33 silly tryClone cloning googleapis/nodejs-text-to-speech#debug via git@github.com:googleapis/nodejs-text-to-speech.git#debug
+34 verbose tryClone git-github-com-googleapis-nodejs-text-to-speech-git-debug-48ee8ed4 not in flight; caching
+35 info git [ 'clone',
+35 info git   '--template=/home/pedro/.npm/_git-remotes/_templates',
+35 info git   '--mirror',
+35 info git   'git@github.com:googleapis/nodejs-text-to-speech.git',
+35 info git   '/home/pedro/.npm/_git-remotes/git-github-com-googleapis-nodejs-text-to-speech-git-debug-48ee8ed4' ]
+36 error git clone --template=/home/pedro/.npm/_git-remotes/_templates --mirror git@github.com:googleapis/nodejs-text-to-speech.git /home/pedro/.npm/_git-remotes/git-github-com-googleapis-nodejs-text-to-speech-git-debug-48ee8ed4: Cloning into bare repository '/home/pedro/.npm/_git-remotes/git-github-com-googleapis-nodejs-text-to-speech-git-debug-48ee8ed4'...
+36 error git clone --template=/home/pedro/.npm/_git-remotes/_templates --mirror git@github.com:googleapis/nodejs-text-to-speech.git /home/pedro/.npm/_git-remotes/git-github-com-googleapis-nodejs-text-to-speech-git-debug-48ee8ed4: Warning: Permanently added the RSA host key for IP address '140.82.113.3' to the list of known hosts.
+36 error git clone --template=/home/pedro/.npm/_git-remotes/_templates --mirror git@github.com:googleapis/nodejs-text-to-speech.git /home/pedro/.npm/_git-remotes/git-github-com-googleapis-nodejs-text-to-speech-git-debug-48ee8ed4: git@github.com: Permission denied (publickey).
+36 error git clone --template=/home/pedro/.npm/_git-remotes/_templates --mirror git@github.com:googleapis/nodejs-text-to-speech.git /home/pedro/.npm/_git-remotes/git-github-com-googleapis-nodejs-text-to-speech-git-debug-48ee8ed4: fatal: Could not read from remote repository.
+36 error git clone --template=/home/pedro/.npm/_git-remotes/_templates --mirror git@github.com:googleapis/nodejs-text-to-speech.git /home/pedro/.npm/_git-remotes/git-github-com-googleapis-nodejs-text-to-speech-git-debug-48ee8ed4:
+36 error git clone --template=/home/pedro/.npm/_git-remotes/_templates --mirror git@github.com:googleapis/nodejs-text-to-speech.git /home/pedro/.npm/_git-remotes/git-github-com-googleapis-nodejs-text-to-speech-git-debug-48ee8ed4: Please make sure you have the correct access rights
+36 error git clone --template=/home/pedro/.npm/_git-remotes/_templates --mirror git@github.com:googleapis/nodejs-text-to-speech.git /home/pedro/.npm/_git-remotes/git-github-com-googleapis-nodejs-text-to-speech-git-debug-48ee8ed4: and the repository exists.
+37 silly fetchPackageMetaData Error: Command failed: git clone --template=/home/pedro/.npm/_git-remotes/_templates --mirror git@github.com:googleapis/nodejs-text-to-speech.git /home/pedro/.npm/_git-remotes/git-github-com-googleapis-nodejs-text-to-speech-git-debug-48ee8ed4
+37 silly fetchPackageMetaData Cloning into bare repository '/home/pedro/.npm/_git-remotes/git-github-com-googleapis-nodejs-text-to-speech-git-debug-48ee8ed4'...
+37 silly fetchPackageMetaData Warning: Permanently added the RSA host key for IP address '140.82.113.3' to the list of known hosts.
+37 silly fetchPackageMetaData git@github.com: Permission denied (publickey).
+37 silly fetchPackageMetaData fatal: Could not read from remote repository.
+37 silly fetchPackageMetaData
+37 silly fetchPackageMetaData Please make sure you have the correct access rights
+37 silly fetchPackageMetaData and the repository exists.
+37 silly fetchPackageMetaData
+37 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:275:12)
+37 silly fetchPackageMetaData     at emitTwo (events.js:126:13)
+37 silly fetchPackageMetaData     at ChildProcess.emit (events.js:214:7)
+37 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:925:16)
+37 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+37 silly fetchPackageMetaData  error for googleapis/nodejs-text-to-speech#debug { Error: Command failed: git clone --template=/home/pedro/.npm/_git-remotes/_templates --mirror git@github.com:googleapis/nodejs-text-to-speech.git /home/pedro/.npm/_git-remotes/git-github-com-googleapis-nodejs-text-to-speech-git-debug-48ee8ed4
+37 silly fetchPackageMetaData Cloning into bare repository '/home/pedro/.npm/_git-remotes/git-github-com-googleapis-nodejs-text-to-speech-git-debug-48ee8ed4'...
+37 silly fetchPackageMetaData Warning: Permanently added the RSA host key for IP address '140.82.113.3' to the list of known hosts.
+37 silly fetchPackageMetaData git@github.com: Permission denied (publickey).
+37 silly fetchPackageMetaData fatal: Could not read from remote repository.
+37 silly fetchPackageMetaData
+37 silly fetchPackageMetaData Please make sure you have the correct access rights
+37 silly fetchPackageMetaData and the repository exists.
+37 silly fetchPackageMetaData
+37 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:275:12)
+37 silly fetchPackageMetaData     at emitTwo (events.js:126:13)
+37 silly fetchPackageMetaData     at ChildProcess.emit (events.js:214:7)
+37 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:925:16)
+37 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+37 silly fetchPackageMetaData   killed: false,
+37 silly fetchPackageMetaData   code: 128,
+37 silly fetchPackageMetaData   signal: null,
+37 silly fetchPackageMetaData   cmd: 'git clone --template=/home/pedro/.npm/_git-remotes/_templates --mirror git@github.com:googleapis/nodejs-text-to-speech.git /home/pedro/.npm/_git-remotes/git-github-com-googleapis-nodejs-text-to-speech-git-debug-48ee8ed4' }
+38 silly rollbackFailedOptional Starting
+39 silly rollbackFailedOptional Finishing
+40 silly runTopLevelLifecycles Starting
+41 silly runTopLevelLifecycles Finishing
+42 silly install printInstalled
+43 verbose stack Error: Command failed: git clone --template=/home/pedro/.npm/_git-remotes/_templates --mirror git@github.com:googleapis/nodejs-text-to-speech.git /home/pedro/.npm/_git-remotes/git-github-com-googleapis-nodejs-text-to-speech-git-debug-48ee8ed4
+43 verbose stack Cloning into bare repository '/home/pedro/.npm/_git-remotes/git-github-com-googleapis-nodejs-text-to-speech-git-debug-48ee8ed4'...
+43 verbose stack Warning: Permanently added the RSA host key for IP address '140.82.113.3' to the list of known hosts.
+43 verbose stack git@github.com: Permission denied (publickey).
+43 verbose stack fatal: Could not read from remote repository.
+43 verbose stack
+43 verbose stack Please make sure you have the correct access rights
+43 verbose stack and the repository exists.
+43 verbose stack
+43 verbose stack     at ChildProcess.exithandler (child_process.js:275:12)
+43 verbose stack     at emitTwo (events.js:126:13)
+43 verbose stack     at ChildProcess.emit (events.js:214:7)
+43 verbose stack     at maybeClose (internal/child_process.js:925:16)
+43 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+44 verbose cwd /home/pedro/Documentos/bootcamp/gympoint
+45 error Linux 5.0.0-36-generic
+46 error argv "/usr/bin/node" "/usr/bin/npm" "install" "googleapis/nodejs-text-to-speech#debug"
+47 error node v8.10.0
+48 error npm  v3.5.2
+49 error code 128
+50 error Command failed: git clone --template=/home/pedro/.npm/_git-remotes/_templates --mirror git@github.com:googleapis/nodejs-text-to-speech.git /home/pedro/.npm/_git-remotes/git-github-com-googleapis-nodejs-text-to-speech-git-debug-48ee8ed4
+50 error Cloning into bare repository '/home/pedro/.npm/_git-remotes/git-github-com-googleapis-nodejs-text-to-speech-git-debug-48ee8ed4'...
+50 error Warning: Permanently added the RSA host key for IP address '140.82.113.3' to the list of known hosts.
+50 error git@github.com: Permission denied (publickey).
+50 error fatal: Could not read from remote repository.
+50 error
+50 error Please make sure you have the correct access rights
+50 error and the repository exists.
+51 error If you need help, you may report this error at:
+51 error     <https://github.com/npm/npm/issues>
+52 verbose exit [ 1, true ]
