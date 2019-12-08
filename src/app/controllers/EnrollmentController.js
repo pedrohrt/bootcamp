@@ -4,7 +4,7 @@ class EnrollmentController {
   async store(req, res) {
     const enrollment = await Enrollment.create(req.body);
 
-    return res.json();
+    return res.json(enrollment);
   }
 }
 
