@@ -43,24 +43,3 @@ module.exports = {
     return queryInterface.dropTable('students');
   },
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

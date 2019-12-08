@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('enrollment', {
@@ -11,23 +9,23 @@ module.exports = {
       },
       student_id: {
         type: Sequelize.INTEGER,
-        references: {model: 'students', key: 'id'},
+        references: { model: 'students', key: 'id' },
         onUpdate: 'CASCADE',
         onDelete: 'SET NULL',
         allowNull: true,
       },
       plan_id: {
         type: Sequelize.INTEGER,
-        references: {model: 'plans', key: 'id'},
+        references: { model: 'plans', key: 'id' },
         onUpdate: 'CASCADE',
         onDelete: 'SET NULL',
         allowNull: true,
       },
-      start_date:{
+      start_date: {
         type: Sequelize.DATE,
         allowNull: false,
       },
-      end_date:{
+      end_date: {
         type: Sequelize.DATE,
         allowNull: false,
       },
@@ -43,14 +41,10 @@ module.exports = {
         type: Sequelize.DATE,
         allowNull: false,
       },
-
     });
-
   },
 
-  down: (queryInterface, Sequelize) => {
-
+  down: queryInterface => {
     return queryInterface.dropTable('enrollment');
-
-  }
+  },
 };
