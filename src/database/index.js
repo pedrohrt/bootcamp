@@ -1,4 +1,5 @@
 import Sequelize from 'sequelize';
+import mongoose from 'mongoose';
 import User from '../app/models/User';
 import Student from '../app/models/Student';
 import Enrollment from '../app/models/Enrollment';
@@ -11,6 +12,7 @@ const models = [User, Student, Plan, Enrollment, Checkin];
 class Database {
   constructor() {
     this.init();
+    // this.mongo();
   }
 
   init() {

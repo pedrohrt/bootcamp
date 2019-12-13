@@ -10,6 +10,15 @@ class EnrollmentController {
   async store(req, res) {
     const { student_id, plan_id, start_date } = req.body;
 
+    const plan = await Plan.findByPk(plan_id);
+    const student = await Student.findByPk(student_id);
+
+    if (!student || !plan) {
+      return res
+        .status(401)
+        .json({ error: 'Student or Plan does not existis' });
+    }
+
     const enrollmentExistis = await Enrollment.findOne({
       where: {
         student_id,
@@ -19,9 +28,6 @@ class EnrollmentController {
     if (enrollmentExistis) {
       return res.status(400).json({ error: 'Student is registered in plan' });
     }
-
-    const plan = await Plan.findByPk(plan_id);
-    const student = await Student.findByPk(student_id);
 
     const end_date = addMonths(parseISO(start_date), plan.duration);
     const dateFormated = format(end_date, "dd 'de' MMMM 'de' yyyy", {
