@@ -18,9 +18,9 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      awser: {
+      answer: {
         type: Sequelize.STRING,
-        allowNull: false,
+        allowNull: true,
       },
       answer_at: {
         type: Sequelize.STRING,
